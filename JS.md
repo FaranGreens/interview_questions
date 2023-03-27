@@ -4,6 +4,39 @@ What is JS and Purpose of it?
 JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies
 
 ```
+
+```
+What is execution context in JS?
+everything happens inside execution context in javascript.
+
+Execution context has two parts: 
+1. Memory component aka variable environment: all the variables and functions are stored as key value pairs
+2. Code component aka thread of execution
+javascript is a synchronous singl thresded language. one command at a time and in a speciific order.
+
+```
+
+```
+what happens when you run a javascript program? Or how js program is executed?
+phase - 1: global execution context is created: memory creation phase - variable memory is allocated and undefined value is assigned to it.
+function is saved with the whole code. when function is called a new local execution context is created and two phases of execution context happens. When it ends / returns the control to the where it was called from, the execution context is deleted.
+
+phase 2: code is executed line by line. 
+
+
+everything is managed in call stack. global execution context is in the bottom of the stack. whenever a function is invoked or local execution context is created it is put inside the stack and is cleared when its execution is completed.
+
+when whole program is done or execution completes, the global execution context is deleted as well and the call stack is empty.
+call stack maintains the execution of execution contexts.
+
+call stack is also known by many names -> execution context stack, prog stack, control stack, runtime stack, machine stack etc.
+
+```
+
+```
+
+
+```
 What are Data types in JS 
 
 What is var , let and Const 
