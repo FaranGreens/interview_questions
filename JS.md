@@ -50,7 +50,7 @@ JavaScript has 8 Datatypes
 7. Symbol
 8. Object
 
-![JS datatypes](["./JS_datatypes.png"](https://github.com/FaranGreens/interview_questions/blob/main/JS_datatypes.png?raw=true))
+![JS_datatypes](JS_datatypes.png)
 
 The Object Datatype
 The object data type can contain:
