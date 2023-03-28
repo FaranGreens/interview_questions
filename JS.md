@@ -37,8 +37,28 @@ call stack is also known by many names -> execution context stack, prog stack, c
 
 
 ```
-What are Data types in JS 
+```
+What are Data types in JS
 
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+![JS datatypes]("./JS_datatypes.png")
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+```
 What is var , let and Const 
 
 Explain Diff btw number data type and BigInt
