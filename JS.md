@@ -50,7 +50,7 @@ JavaScript has 8 Datatypes
 7. Symbol
 8. Object
 
-![JS_datatypes](JS_datatypes.png)
+
 
 The Object Datatype
 The object data type can contain:
@@ -59,6 +59,9 @@ The object data type can contain:
 2. An array
 3. A date
 ```
+![JS_datatypes](JS_datatypes.png)
+
+
 What is var , let and Const 
 
 Explain Diff btw number data type and BigInt
