@@ -38,6 +38,11 @@ The scope chain and lexical environment:
 
 
 ```
+
+```
+Temporal Dead Zone: 
+
+```
 ```
 What are Data types in JS
 
