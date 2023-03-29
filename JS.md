@@ -41,6 +41,11 @@ The scope chain and lexical environment:
 
 ```
 Temporal Dead Zone: 
+teporal dead zone is the time between the let or const is defined and being initialised. 
+Let and const are also hoisted in javascript but they hoisted differently than var.  
+they are being in temporal zone before initialization.
+They cannot be accessed in global execution context/scope or using window or this. 
+best practice is to move our declaration and initialisation on the top of the page to shrink the temporal dead zone to zero.
 
 ```
 ```
