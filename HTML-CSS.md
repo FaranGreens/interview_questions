@@ -73,3 +73,6 @@ Test your website on different devices: Test your website on different devices a
 Iterate and improve: Continuously monitor your website's performance and user feedback, and make changes as necessary to improve the user experience on different devices.
 
 ### What do you care about the most when you write software?
+writing software that is functional, reliable, and maintainable. This means that the software should do what it's supposed to do, without crashing or producing incorrect results. It should also be easy to modify or update in the future as requirements change.
+
+
