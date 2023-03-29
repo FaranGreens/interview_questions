@@ -56,7 +56,7 @@ Block scope:  what all variables and functions we can access inside the block.
 They will be hoisted in block scope and not in global scope. 
 if var, let and const all are defined inside {} or block. var is accessed inside global scope but let and const are not.
 which is why let and const are called block scoped.
-
+block follows lexical scope chaining if we want to access any values.
 
 Shadowing: 
 we can redeclare a variable inside a scope and it will overwrite temporarily its value for computation inside the scope.
