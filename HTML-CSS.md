@@ -13,19 +13,33 @@ In HTML5, this is the standard DOCTYPE that should be used for all web pages. It
 
 DOCTYPES are important because they help ensure that web pages are displayed consistently across different browsers and platforms. By specifying the correct DOCTYPE, developers can avoid compatibility issues and ensure that their pages are displayed correctly for all users.
 
-What is !important?
+### What is !important?
 
-What is CSS positioning?
+### What is CSS positioning?
 
-What is the difference between position fixed, absolute and relative?
+### What is the difference between position fixed, absolute and relative?
 
-the difference between display none and display hidden
+### the difference between display none and display hidden
 
-What is the box model?
+### What is the box model?
 
-Difference between flex and grid? Where can you use it?
+### Difference between flex and grid? Where can you use it?
 
-What is BEM?
+### What is BEM?
+BEM (Block Element Modifier) is a naming convention and methodology for writing clean, maintainable, and scalable CSS code. It was developed by Yandex, a Russian search engine, to solve the problem of CSS specificity and maintainability.
+
+The BEM methodology is based on the idea of breaking down a web page into reusable blocks, which can be combined and modified to create different layouts and designs. Each block is given a unique name, which describes its purpose and functionality.
+
+The naming convention for BEM consists of three parts: Block, Element, and Modifier. Here's an example:
+
+.block__element--modifier {}
+
+Block: A standalone component or module on a web page that has a specific function and purpose. It should be named in a way that is descriptive and easy to understand, such as "menu", "button", or "form".
+Element: A part of a block that has no standalone meaning and is tied to the block. It should be named using the double underscore notation, such as "menu__item", "button__icon", or "form__input".
+Modifier: A property or state that modifies the block or element. It should be named using the double dash notation, such as "menu__item--active", "button__icon--small", or "form__input--disabled".
+The BEM methodology helps to create a clear and structured naming system for CSS classes, which makes it easier to understand and maintain CSS code. It also helps to reduce the specificity of CSS selectors, which can lead to more predictable and maintainable code.
+
+In summary, BEM is a naming convention and methodology for writing scalable and maintainable CSS code, based on the idea of breaking down a web page into reusable blocks, and using descriptive names for blocks, elements, and modifiers.
 
 ## Open ended questions
 ### What are some new things happening in the web?
