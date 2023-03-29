@@ -1,5 +1,18 @@
 # HTML AND CSS Interview Questions for Practice
 
+### What does a DOCTYPE do?
+
+A DOCTYPE is an instruction that specifies the type of document being presented in an HTML or XML file. It informs the web browser or XML parser which version of markup language the document is using and how to interpret it.
+
+The DOCTYPE declaration is usually located at the beginning of an HTML document, before the <html> tag, and looks something like this:
+
+```html
+<!DOCTYPE html>
+```
+In HTML5, this is the standard DOCTYPE that should be used for all web pages. It tells the browser that the document is an HTML5 document and instructs it to render the page in the most modern and standards-compliant way possible.
+
+DOCTYPES are important because they help ensure that web pages are displayed consistently across different browsers and platforms. By specifying the correct DOCTYPE, developers can avoid compatibility issues and ensure that their pages are displayed correctly for all users.
+
 What is !important?
 
 What is CSS positioning?
@@ -87,5 +100,8 @@ Usability: The software should be easy to use and navigate for users, with clear
 
 Compatibility: The software should work correctly and consistently across different platforms and devices.
 
+Code quality: The code should be well-organized, readable, and documented, making it easy for other developers to understand and modify as needed.
+
+i would care about creating software that meets the needs of users, performs reliably, and can be easily maintained and updated over time.
 
 
