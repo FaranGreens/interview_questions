@@ -60,5 +60,16 @@ Strategy: A pattern that defines a family of algorithms, encapsulates each one, 
 
 
 ### How do you go about managing responsive websites?
+Plan your website: Before you start designing your website, it's important to plan out your content and the user experience you want to provide. Consider how users will navigate your site on different devices and screen sizes.
+
+Use a responsive design framework: Use a responsive design framework such as Bootstrap, Foundation, or Material Design that provides pre-built components and styles that are optimized for different screen sizes. These frameworks can save you a lot of time and effort in designing and coding your site.
+
+Use fluid layouts: Use fluid layouts that stretch or shrink to fit the available screen size. Avoid using fixed-width layouts that may not look good on smaller screens.
+
+Optimize images and media: Optimize your images and other media files so that they load quickly on all devices. Use appropriate image sizes and compression to reduce file size without sacrificing quality.
+
+Test your website on different devices: Test your website on different devices and screen sizes to ensure that it looks and works as intended. Use tools such as browser emulators or real devices to test your site.
+
+Iterate and improve: Continuously monitor your website's performance and user feedback, and make changes as necessary to improve the user experience on different devices.
 
 ### What do you care about the most when you write software?
