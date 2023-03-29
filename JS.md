@@ -34,6 +34,7 @@ call stack is also known by many names -> execution context stack, prog stack, c
 ```
 
 ```
+The scope chain and lexical environment: 
 
 
 ```
