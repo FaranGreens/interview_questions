@@ -74,5 +74,10 @@ Iterate and improve: Continuously monitor your website's performance and user fe
 
 ### What do you care about the most when you write software?
 writing software that is functional, reliable, and maintainable. This means that the software should do what it's supposed to do, without crashing or producing incorrect results. It should also be easy to modify or update in the future as requirements change.
+Correctness: The software should produce the correct results and behave as intended, even under unexpected or exceptional circumstances.
+
+Performance: The software should be efficient and responsive, with minimal delays or waiting times.
+
+Security: The software should be secure and protect user data from unauthorized access or attacks.
 
 
