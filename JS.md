@@ -89,7 +89,17 @@ The object data type can contain:
 ```
 ![JS_datatypes](JS_datatypes.png)
 
+### Closure 
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+```
+Explain Closures, Why do we need it 
+A closure is a feature in JavaScript that allows a function to access variables outside of its own scope. 
+In other words, a closure "closes over" or captures the variables that are in the surrounding environment, 
+so that the function can use them even if they would otherwise be out of scope.
 
+
+
+```
 What is var , let and Const 
 
 Explain Diff btw number data type and BigInt
@@ -118,7 +128,7 @@ What is Promise Chain
 
 Drawback of Callbacks and what is callback chain 
 
-Explain Clousers, Why do we need it 
+
 
 Explain Fetch
 
