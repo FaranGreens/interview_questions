@@ -97,7 +97,21 @@ A closure is a feature in JavaScript that allows a function to access variables 
 In other words, a closure "closes over" or captures the variables that are in the surrounding environment, 
 so that the function can use them even if they would otherwise be out of scope.
 
+use cases:
+Factory functions: Closures can be used to create factory functions that return new functions with specific behavior, 
+while also capturing and preserving private state.
 
+Event handling: Closures can be used to create event handlers that remember information about 
+the state of the application at the time the event was triggered.
+
+Memoization: Closures can be used to cache the results of expensive function calls, 
+improving the performance of the application by avoiding unnecessary computations.
+
+Currying: Closures can be used to implement currying, which is a technique for transforming a 
+function with multiple arguments into a series of functions that each take a single argument.
+
+Asynchronous programming: Closures can be used to manage the flow of asynchronous code, 
+by capturing and preserving state across multiple asynchronous operations.
 
 ```
 What is var , let and Const 
