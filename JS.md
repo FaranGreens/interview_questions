@@ -113,6 +113,15 @@ function with multiple arguments into a series of functions that each take a sin
 Asynchronous programming: Closures can be used to manage the flow of asynchronous code, 
 by capturing and preserving state across multiple asynchronous operations.
 
+data hiding/encapsulation.
+
+```
+
+```
+setTimeout and closure
+
+
+
 ```
 What is var , let and Const 
 
