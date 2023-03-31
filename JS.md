@@ -123,6 +123,73 @@ setTimeout and closure
 
 
 ```
+
+```JS
+a(); // properly hoisted, no error
+b(); // will throw error as code doesnot know b is a function yet and its undefined
+//treated like a normal variable.
+//Function statement: this way of making function is function statement aka Function declaration
+function a(){
+    //some code
+}
+
+//Function expression: 
+// the diff b/w fn expression and fn statement is in hoisting. 
+var b = function (){
+    //some code
+}
+b(); //called here then no error as b is not undefined.
+
+//Anonymous Function: func without a name. they are used when functions are used as a value.
+function (){
+
+}
+
+//named functions
+
+//diff b/w parameters and arguments
+//parameters are labels or identifiers when we define a function. they get the value passed from arguments
+//when function is called. they are treated as local variables. they are in local scope only.
+function fn(param1, param2){
+    //some code
+}
+fn(arg1, arg2);
+
+//first class function: the ability of functions to be used as value and passed as arguments to other
+// functions and can be returned from other functions. 
+
+//first class citizens
+
+//arrow functions:came as a part of ES6: 
+
+```
+## Event Loop
+Microtask queue: promises, mutation observers go in microstask queue. microtask queue has higher priority. 
+
+Callback queue: all other callback fns go in task queue or call back queue. it will execute once microstask queue has become empty.
+
+Starvation: 
+
+</br>
+
+## JS Engine
+Javascript runtime Environment: JavaScript runtime environment refers to the environment or context in which JavaScript code is executed. It includes all the necessary components that are required to run JavaScript code, such as the browser or Node.js.
+
+3 steps in JS engine
+parsing: code broken into tokens. syntax parser breaks code in AST (abstract syntax tree).AST is passeddown to compilation phase
+
+compilation: compilation and execution work hand in hand. jS has JIT(just in time) compilation. Js can use both interpreter and compiler to make it work.
+It converts ASt to byte code and sends for execution. Compilatio does alot of optimization like - inlining, copy elision, inline caching
+
+execution: it uses memory heap and call stack to execute the byte code. grbage collector tries to clear memory using mark and sweep algorithm.
+
+V8 has interpreter named - ignition, along with that turbo-fan as optimizing compiler. garbage collector are orinoco and oilpan.
+
+
+
+
+</br>
+
 What is var , let and Const 
 
 Explain Diff btw number data type and BigInt
@@ -197,7 +264,7 @@ Explain Storages of Browser
 
 Regular Expressions 
 
-What is Hositing and Shadowing
+What is Hoisting and Shadowing
 
 Diff between var, let and Const 
 
