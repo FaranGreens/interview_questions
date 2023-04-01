@@ -191,17 +191,48 @@ a function which takes a function as an argument or returns a function is known 
 
 ## Callbacks
 ### Callback hell
-alot of nested callbacks. callback inside callback.
+alot of nested callbacks. callback inside callback. aka pyramid of doom.
 
 #### Inversion of control
 you lose the control of code while using callback.
 
 ## Promises
-used to handle async operations
- 
+used to handle async operations. can be resolved once. 3 state - pending, fulfilled, rejected.
+promise object data is immutable.
+a promise is an object which represents the eventual completion or failure of an async operation.
+
+### why do we use promise?
+promise create trust in the transaction.<br/>
+Promises simplify asynchronous code by eliminating the need for nested callbacks, or "callback hell".<br/>
+Promises provide a more structured way to handle errors, by allowing developers to attach a single error handler to a chain of asynchronous operations.<br/>
+Promises support composition and chaining, which makes it easier to build complex asynchronous workflows.<br/>
+Promises are a standardized API that is supported by modern browsers and Node.js, which makes it easier to write portable code.
+
+### Promise chaining
+promise chaing helps us to get out of callback hell.
+fn.then(()=> fn2).then(()=>fn3)
+
+### Creating Promises
+```JS
+function myFunc(arg){
+    const promise = new Promise(function(resolve, reject){
+
+        if(verificationFailed){
+            const err = new Error("failed")
+            reject(err);
+        }
+
+        const data = "data";
+        if(data){
+            resolve(data);
+        }
+    })
+}
+
+```
 
 
-</br>
+<br/>
 
 What is var , let and Const 
 
