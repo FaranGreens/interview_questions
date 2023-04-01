@@ -179,13 +179,26 @@ Javascript runtime Environment: JavaScript runtime environment refers to the env
 parsing: code broken into tokens. syntax parser breaks code in AST (abstract syntax tree).AST is passeddown to compilation phase
 
 compilation: compilation and execution work hand in hand. jS has JIT(just in time) compilation. Js can use both interpreter and compiler to make it work.
-It converts ASt to byte code and sends for execution. Compilatio does alot of optimization like - inlining, copy elision, inline caching
+It converts ASt to byte code and sends for execution. Compilation does alot of optimization like - inlining, copy elision, inline caching
 
 execution: it uses memory heap and call stack to execute the byte code. grbage collector tries to clear memory using mark and sweep algorithm.
 
 V8 has interpreter named - ignition, along with that turbo-fan as optimizing compiler. garbage collector are orinoco and oilpan.
 
 
+## Higher order function
+a function which takes a function as an argument or returns a function is known as higher order function.
+
+## Callbacks
+### Callback hell
+alot of nested callbacks. callback inside callback.
+
+#### Inversion of control
+you lose the control of code while using callback.
+
+## Promises
+used to handle async operations
+ 
 
 
 </br>
