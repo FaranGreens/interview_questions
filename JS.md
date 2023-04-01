@@ -1,12 +1,8 @@
-```
-What is JS and Purpose of it?
+### What is JS and Purpose of it?
 
 JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies
 
-```
-
-```
-What is execution context in JS?
+### What is execution context in JS?
 In JavaScript, the execution context refers to the environment in which a piece of code is executed.
 everything happens inside execution context in javascript.
 
@@ -15,15 +11,11 @@ Execution context has two parts:
 2. Code component aka thread of execution
 javascript is a synchronous singl thresded language. one command at a time and in a speciific order.
 
-```
-
-```
-what happens when you run a javascript program? Or how js program is executed?
+### what happens when you run a javascript program? Or how js program is executed?
 phase - 1: global execution context is created: memory creation phase - variable memory is allocated and undefined value is assigned to it.
 function is saved with the whole code. when function is called a new local execution context is created and two phases of execution context happens. When it ends / returns the control to the where it was called from, the execution context is deleted.
 
 phase 2: code is executed line by line.
-
 
 everything is managed in call stack. global execution context is in the bottom of the stack. whenever a function is invoked or local execution context is created it is put inside the stack and is cleared when its execution is completed.
 
@@ -32,10 +24,7 @@ call stack maintains the execution of execution contexts.
 
 call stack is also known by many names -> execution context stack, prog stack, control stack, runtime stack, machine stack etc.
 
-```
-
-```
-The scope chain and lexical environment:
+### The scope chain and lexical environment:
 In JavaScript, the scope chain is a list of Variable Objects (VOs) that are used to 
 resolve variables and functions during the execution of code.
 
@@ -73,20 +62,14 @@ The lexical environment consists of two parts:
 
 2. Reference to the outer (enclosing) lexical environment - It is a reference to the lexical environment of the parent scope, which is used to resolve variable and function names that are not defined in the current scope
 
-```
-
-```
-Temporal Dead Zone:
+### Temporal Dead Zone:
 teporal dead zone is the time between the let or const is defined and being initialised.
 Let and const are also hoisted in javascript but they hoisted differently than var.
 they are being in temporal zone before initialization.
 They cannot be accessed in global execution context/scope or using window or this.
 best practice is to move our declaration and initialisation on the top of the page to shrink the temporal dead zone to zero.
 
-```
-
-```
-Block scope and shadowing:
+### Block scope and shadowing:
 block is defined by {} 'curly braces ' also known as compound statements. we compound statements in one place when we need to write multiple statements.
 
 Block scope:  what all variables and functions we can access inside the block.
@@ -99,11 +82,7 @@ Shadowing:
 we can redeclare a variable inside a scope and it will overwrite temporarily its value for computation inside the scope.
 let and const can be shadowed as well.
 
-
-```
-
-```
-What are Data types in JS
+### What are Data types in JS
 
 JavaScript has 8 Datatypes
 1. String
@@ -123,7 +102,6 @@ The object data type can contain:
 1. An object
 2. An array
 3. A date
-```
 
 ![JS_datatypes](JS_datatypes.png)
 
@@ -131,8 +109,7 @@ The object data type can contain:
 
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
-```
-Explain Closures, Why do we need it
+### Explain Closures, Why do we need it
 A closure is a feature in JavaScript that allows a function to access variables outside of its own scope.
 In other words, a closure "closes over" or captures the variables that are in the surrounding environment,
 so that the function can use them even if they would otherwise be out of scope.
@@ -156,14 +133,12 @@ by capturing and preserving state across multiple asynchronous operations.
 data hiding/encapsulation.
 
 ```
-
-```
 setTimeout and closure
 
 
 
 ```
-
+### Functions and types
 ```JS
 a(); // properly hoisted, no error
 b(); // will throw error as code doesnot know b is a function yet and its undefined
@@ -230,9 +205,10 @@ V8 has interpreter named - ignition, along with that turbo-fan as optimizing com
 
 ## Higher order function
 
-a function which takes a function as an argument or returns a function is known as higher order function.
+a function which takes a function as an argument or returns a function as value is known as higher order function.
 
 ## Callbacks
+a callback is a function that is passed as an argument to another function and is executed when that function has completed its operation.
 
 ### Callback hell
 
@@ -285,27 +261,44 @@ function myFunc(arg){
 <br/>
 
 
-What is var , let and Const
+### What is var , let and Const
 
-Explain Diff btw number data type and BigInt
+### Explain Diff btw number data type and BigInt
+In JavaScript, the Number data type is used to represent numbers, including integers and floating-point numbers, within a certain range. The range of numbers that can be represented by the Number data type is limited by the IEEE 754 standard, which defines a 64-bit format for representing numbers in binary.
 
-Explain about Control statement and diff btween if else if and switch
+BigInt, on the other hand, is a relatively new data type that was introduced in ECMAScript 2020. BigInt is used to represent integers of arbitrary length, beyond the maximum limit of the Number data type. BigInts are represented using a different format than regular numbers, which allows them to have an arbitrary length and precision.
 
-What is Object and Array
+The main differences between the Number data type and BigInt are:
 
-Explore All Array Methods and String Methods
+Range: The range of the Number data type is limited to approximately ± 9 quadrillion (i.e., 2^53), while BigInt can represent integers of arbitrary length and magnitude.
 
-Diff between forEach() Map() and filter()
+Precision: The Number data type has a limited precision due to the nature of its binary representation, which can lead to rounding errors in certain calculations. BigInt, on the other hand, has arbitrary precision, which means that it can represent exact values without rounding errors.
 
-Diff between slice and splice
+Operators: Some operators and functions that work with regular numbers (e.g., +, -, *, /) may not work with BigInts, or may have different behavior due to the different format of the BigInt data type.
 
-Diff btw == and ===
+Syntax: BigInt literals are written with a trailing n, for example, const big = 123456789012345678901234567890n; whereas regular numbers do not have any specific syntax.
 
-What is for..in and for.. of
+In summary, while the Number data type is suitable for representing most numerical values in JavaScript, BigInt is useful for cases where the range or precision of regular numbers is not sufficient, such as cryptography or mathematical algorithms that require large integer calculations.
 
-What is DOM and DOM Manipulation
+<br/>
 
-#### What is call apply bind ?
+### Explain about Control statement and diff btween if else if and switch
+
+### What is Object and Array
+
+### Explore All Array Methods and String Methods
+
+### Diff between forEach() Map() and filter()
+
+### Diff between slice and splice
+
+### Diff btw == and ===
+
+### What is for..in and for.. of
+
+### What is DOM and DOM Manipulation
+
+### What is call apply bind ?
 
 ```js
 let name = {
@@ -351,7 +344,7 @@ printFunc(); //o/p: adam driver from London, UK.
 
 ```
 
-#### polyfills for bind
+### polyfills for bind
 polyfill is a browser fallback for a function that might not be supported in older browsers.
 
 ```js
@@ -364,66 +357,66 @@ let obj = {
 ```
 
 
-What is Promise and Explain Promise
+### What is Promise and Explain Promise
 
-What is Promise Chain
+### What is Promise Chain
 
-Drawback of Callbacks and what is callback chain
+### Drawback of Callbacks and what is callback chain
 
-Explain Fetch
+### Explain Fetch
 
-Why we need to handle then() two times in fetch
+### Why we need to handle then() two times in fetch
 
-What is OOPs and Explain its Features
+### What is OOPs and Explain its Features
 
-What is diff btw spread OPerator and rest Parameter
+### What is diff btw spread OPerator and rest Parameter
 
-Explain about this keyword in JS
+### Explain about this keyword in JS
 
-Explain Prototype
+### Explain Prototype
 
-What is event
+### What is event
 
-Explain Event Propagation
+### Explain Event Propagation
 
-Explain diff btween Event Bubbling and Event Capturing
+### Explain diff btween Event Bubbling and Event Capturing
 
-How can we restrict Event Bubbling and Event Capturng behaviour
+### How can we restrict Event Bubbling and Event Capturng behaviour
 
-What is aync await
+### What is aync await
 
-In how many ways we can handle Promise
+### In how many ways we can handle Promise
 
-Why do we need Promise
+### Why do we need Promise
 
-What are the states of Promise Object
+### What are the states of Promise Object
 
-What is Generator function in JS
+### What is Generator function in JS
 
-What is diff between normal function and arrow function
+### What is diff between normal function and arrow function
 
-How to compare Object and How to find the Object is empty or not
+### How to compare Object and How to find the Object is empty or not
 
-What is Set
+### What is Set
 
-SetTimeout and setInterval
+### SetTimeout and setInterval
 
-What is Browser Object Model (BOM)
+### What is Browser Object Model (BOM)
 
-Explain Storages of Browser
+### Explain Storages of Browser
 
-Regular Expressions
+### Regular Expressions
 
-What is Hoisting and Shadowing
+### What is Hoisting and Shadowing
 
-Diff between var, let and Const
+### Diff between var, let and Const
 
-Explain Module Concept in JS
+### Explain Module Concept in JS
 
-Debouncing
+### Debouncing
 
-Throttling
+### Throttling
 
-Currying
+### Currying
 
-Async vs defer
+### Async vs defer
