@@ -262,6 +262,13 @@ function myFunc(arg){
 
 
 ### What is var , let and Const
+var was the original keyword used to declare variables in JavaScript, but it has some quirks that can lead to unintended behavior. In particular, variables declared with var are function-scoped, meaning that their scope is limited to the function in which they are declared or to the global scope if they are declared outside of any function. var variables can also be redeclared and reassigned within their scope, which can lead to unexpected behavior.
+
+let and const were introduced in ECMAScript 2015 as alternatives to var. Variables declared with let are block-scoped, meaning that their scope is limited to the block in which they are declared (i.e., a set of curly braces {}). let variables can be reassigned within their scope, but they cannot be redeclared.
+
+const is similar to let in that it is also block-scoped, but it has an additional restriction: once a variable is declared with const, its value cannot be reassigned. const variables are commonly used to declare constants, such as mathematical or physical constants, that should not be modified during the execution of the program.
+
+<br/>
 
 ### Explain Diff btw number data type and BigInt
 In JavaScript, the Number data type is used to represent numbers, including integers and floating-point numbers, within a certain range. The range of numbers that can be represented by the Number data type is limited by the IEEE 754 standard, which defines a 64-bit format for representing numbers in binary.
@@ -283,8 +290,19 @@ In summary, while the Number data type is suitable for representing most numeric
 <br/>
 
 ### Explain about Control statement and diff btween if else if and switch
+control statements are used to control the flow of execution of a program based on certain conditions. There are several types of control statements in JavaScript, including if/else, switch, for, while, do/while, and break/continue.
+
+The if/else statement is used to execute a block of code if a certain condition is true, and a different block of code if the condition is false. The else if statement allows you to test for additional conditions after the initial if statement, and execute a different block of code depending on which condition is true.
+
+The switch statement is another way of testing for multiple conditions and executing different blocks of code depending on which condition is true. The main difference between if/else if and switch is that switch can be more concise and easier to read when testing for a large number of conditions, particularly if the conditions involve checking the value of a single variable.
+
+<br/>
 
 ### What is Object and Array
+an object is a collection of key-value pairs, where each key is a string (or a symbol in ES6+) and each value can be of any type, including other objects. Objects can be created using object literal syntax or using the new Object() constructor.
+
+An array is a special type of object in JavaScript that stores a collection of values, where each value is identified by an index. Arrays can be created using array literal syntax or using the new Array() constructor.
+
 
 ### Explore All Array Methods and String Methods
 
@@ -352,28 +370,82 @@ let obj = {
     name:"adam",
     city:"delhi"
 }
+function print(country){
+    console.log(this.name + " lives in " + this.city + ", "+country + " age " + this.);
+}
 
+let printfn = print.bind(obj, "India");
+printfn("28")
+Function.prototype.mybind = function(...args){
+    let func = this;
+    let params = args.slice(1);
+    return function(...args2){
+        func.apply(args[0], params);
+    }
+}
+
+//now our mybind is ready
+
+let printfn2 = print.mybind(obj, "India");
+printfn2("25");
 
 ```
+### Function Currying
+Currying is a technique in functional programming where a function with multiple arguments is transformed into a series of functions that each take a single argument. The result of each function is a new function that expects the next argument in the series.
 
+```js
+//consider a function that calculates the sum of three numbers:
+function sum(a, b, c) {
+  return a + b + c;
+}
+//Using currying, we can transform this function into a series of functions that each take a single argument
+
+function sumCurried(a) {
+  return function(b) {
+    return function(c) {
+      return a + b + c;
+    }
+  }
+}
+
+// Usage
+const sumResult = sumCurried(1)(2)(3);
+console.log(sumResult); // 6
+
+```
+Using currying can make code more modular and composable by allowing functions to be partially applied, which means that some arguments can be fixed in advance, creating a new function that expects only the remaining arguments. This can make it easier to create reusable code that can be customized for different use cases.
+
+<br />
 
 ### What is Promise and Explain Promise
 
 ### What is Promise Chain
 
-### Drawback of Callbacks and what is callback chain
+### In how many ways we can handle Promise
+
+### Why do we need Promise
+
+### What are the states of Promise Object
 
 ### Explain Fetch
 
 ### Why we need to handle then() two times in fetch
 
+### What is async await
+
 ### What is OOPs and Explain its Features
 
-### What is diff btw spread OPerator and rest Parameter
+### What is diff btw spread Operator and rest Parameter
 
 ### Explain about this keyword in JS
+the this keyword in JavaScript refers to the current execution context, which is determined at runtime based on how the function is called
 
-### Explain Prototype
+### Explain Prototype, prototype chain and prototypal inheritance
+In JavaScript, each object has an internal property called [[Prototype]] (also called __proto__ in some contexts) that points to another object, called its prototype. This prototype object in turn has its own prototype, and so on, creating a chain of objects known as the prototype chain.
+
+When you access a property of an object, JavaScript first checks if the object itself has that property. If it does not, JavaScript follows the prototype chain until it finds an object that does have the property, or until it reaches the end of the prototype chain (which is the Object.prototype object).
+
+The mechanism of using the prototype chain to look up properties is known as prototypal inheritance, and it allows objects to inherit properties and methods from their prototypes, creating a flexible and powerful system for object-oriented programming in JavaScript.
 
 ### What is event
 
@@ -383,15 +455,13 @@ let obj = {
 
 ### How can we restrict Event Bubbling and Event Capturng behaviour
 
-### What is aync await
-
-### In how many ways we can handle Promise
-
-### Why do we need Promise
-
-### What are the states of Promise Object
-
 ### What is Generator function in JS
+Generator functions are a special type of function in JavaScript that allow you to pause and resume the execution of a function. When a generator function is called, it returns a generator object, which can be used to control the execution of the function.
+
+Generator functions are defined using the function* syntax, which is similar to a normal function, but with an asterisk after the function keyword. Inside a generator function, you can use the yield keyword to pause the execution of the function and return a value to the caller. You can then resume the execution of the function later using the next() method on the generator object.
+Generator functions can be very useful when you need to generate a sequence of values that may take a long time to compute, or when you need to generate values on demand based on some input. They can also be used to implement complex control flow patterns, such as asynchronous programming using promises and async/await.
+
+<br/>
 
 ### What is diff between normal function and arrow function
 
@@ -407,16 +477,10 @@ let obj = {
 
 ### Regular Expressions
 
-### What is Hoisting and Shadowing
-
-### Diff between var, let and Const
-
 ### Explain Module Concept in JS
 
 ### Debouncing
 
 ### Throttling
-
-### Currying
 
 ### Async vs defer
