@@ -9,7 +9,7 @@ everything happens inside execution context in javascript.
 Execution context has two parts:
 1. Memory component aka variable environment: all the variables and functions are stored as key value pairs
 2. Code component aka thread of execution
-javascript is a synchronous singl thresded language. one command at a time and in a speciific order.
+javascript is a synchronous single threaded language. one command at a time and in a speciific order.
 
 ### what happens when you run a javascript program? Or how js program is executed?
 phase - 1: global execution context is created: memory creation phase - variable memory is allocated and undefined value is assigned to it.
@@ -416,6 +416,46 @@ console.log(sumResult); // 6
 Using currying can make code more modular and composable by allowing functions to be partially applied, which means that some arguments can be fixed in advance, creating a new function that expects only the remaining arguments. This can make it easier to create reusable code that can be customized for different use cases.
 
 <br />
+
+### Polyfills for map, filter and reduce.
+```js
+Array.prototype.myMap = function(callback){
+    let res = [];
+    for(let i=0; i<this.length; i++){
+        res.push(callback(this[i], i, this));
+    }
+
+    return res;
+}
+
+Array.prototype.myFilter = function(callback){
+    let res = [];
+
+    for(let i=0; i<this.length; i++){
+        if(callback(this[i], i, this)) res.push(this[i]);
+    }
+    return res;
+}
+
+Array.prototype.myReduce = function(callback, initVal = null){
+    let acc = initVal;
+    for(let i=0; i<this.length; i++){
+        acc = callback(acc, this[i], i, this)
+    }
+
+    return acc;
+}
+//approach 2
+Array.prototype.myReduce = function(callback, initVal = null, thisArg){
+    let acc = initVal;
+    for(let i=0; i<this.length; i++){
+        acc = callback.call(thisArg, acc, this[i], i, this)
+    }
+
+    return acc;
+}
+
+```
 
 ### What is Promise and Explain Promise
 
