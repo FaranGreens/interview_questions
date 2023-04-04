@@ -522,5 +522,6 @@ Generator functions can be very useful when you need to generate a sequence of v
 ### Debouncing
 
 ### Throttling
+Throttling is a technique often used in JavaScript to limit the rate at which a function can be called. This can be useful in a variety of situations, such as when dealing with events that may be triggered many times in a short period of time, or when making requests to a server that should not be sent too frequently.
 
 ### Async vs defer
