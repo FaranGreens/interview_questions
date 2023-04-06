@@ -1,34 +1,35 @@
-What is Library ?
+#### What is Library ?
+A library is a JavaScript file that contains a bunch of functions, and those functions accomplish some useful task for your webpage.
 
-React is Library or Framework ?
+#### React is Library or Framework ?
 
-What is react and Purpose of React ?
+#### What is react and Purpose of React ?
 
-What is Component ? 
+#### What is Component ? 
  
-In how many ways you can create Component ?
+#### In how many ways you can create Component ?
 
-What is state and How to Update State ?
+#### What is state and How to Update State ?
 
-What happens when setState() is called ?
+#### What happens when setState() is called ?
 
-What is Props ?
+#### What is Props ?
 
-Why we use Props ?
+#### Why we use Props ?
 
-How to create Parent Child Relation ?
+#### How to create Parent Child Relation ?
 
-What is Application Flow ?
+#### What is Application Flow ?
 
-What is diff between render() in React and render() in ReactDOM ?
+#### What is diff between render() in React and render() in ReactDOM ?
 
-In how many ways we can pass the data from parent to child ?
+#### In how many ways we can pass the data from parent to child ?
 
-In how many ways you can manage state in React Applicatiion ?
+#### In how many ways you can manage state in React Applicatiion ?
 
-What is Context Api and Why do we use Context API ?
+#### What is Context Api and Why do we use Context API ?
 
-Which kind problem will be solved using Context API ?
+#### Which kind problem will be solved using Context API ?
 
 What is axios ?
 
