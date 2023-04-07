@@ -47,40 +47,40 @@ A library is a JavaScript file that contains a bunch of functions, and those fun
 
 #### Can you explain the life cycle method ?
 
-What is Redux ?
+#### What is Redux ?
 
-Why we have to use redux ?
+#### Why we have to use redux ?
 
-What is Reducer ?
+#### What is Reducer ?
 
-How redux store is available to react app ?
+#### How redux store is available to react app ?
 
-What is redux Logger ?
+#### What is redux Logger ?
 
-How to call the reducer ?
+#### How to call the reducer ?
 
-Can you explain Redux flow ? ()
+#### Can you explain Redux flow ? ()
 
-What are hooks ?
+#### What are hooks ?
 
-Why hooks were introduced ?
+#### Why hooks were introduced ?
 
-What is useEffect or How useEffect will maintain 3 lifecycle method ?
+#### What is useEffect or How useEffect will maintain 3 lifecycle method ?
 
-What is the use of useContext() ?
+#### What is the use of useContext() ?
 
-how can you create reference for element in functional Component ? 
+#### how can you create reference for element in functional Component ? 
 
-What is the diff btw useState and useReducer
+#### What is the diff btw useState and useReducer
 
-What is the use of useCallback and useMemo ?
+#### What is the use of useCallback and useMemo ?
 
-What is HOC(Higher Order Component)
+#### What is HOC(Higher Order Component)
 
-What are list and keys()
+#### What are list and keys()
 
-How to use Redux in Functional Component ?
+#### How to use Redux in Functional Component ?
 
-What is Redux Thunk and Redux Saga
+#### What is Redux Thunk and Redux Saga
 
-how to test Your Component ?
+#### how to test Your Component ?
