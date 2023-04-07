@@ -31,21 +31,21 @@ A library is a JavaScript file that contains a bunch of functions, and those fun
 
 #### Which kind problem will be solved using Context API ?
 
-What is axios ?
+#### What is axios ?
 
-Anything alternate to axios ? 
+#### Anything alternate to axios ? 
 
-How to implement the routing the react application ?
+#### How to implement the routing the react application ?
 
-What is diff between anchor tag and Link component ?
+#### What is diff between anchor tag and Link component ?
 
-How to show page not found component ?
+#### How to show page not found component ?
 
-What are Lifecycle method ?
+#### What are Lifecycle method ?
 
-How many phases
+#### How many phases
 
-Can you explain the life cycle method ?
+#### Can you explain the life cycle method ?
 
 What is Redux ?
 
