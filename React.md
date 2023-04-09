@@ -83,4 +83,4 @@ A library is a JavaScript file that contains a bunch of functions, and those fun
 
 #### What is Redux Thunk and Redux Saga
 
-#### how to test Your Component ?
+#### How to test Your Component ?
